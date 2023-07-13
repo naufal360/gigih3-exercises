@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Classic",
+    "artist": "MKTO",
+    "url": "https://open.spotify.com/track/6FE2iI43OZnszFLuLtvvmg?si=535e2c7b0d2946bc"
+  },
+  {
+    "id": 2,
+    "title": "Leave Before You Love Me",
+    "artist": "Marshmello, Jonas Brother",
+    "url": "https://open.spotify.com/track/4qu63nuBpdn0qHUHuObEj1?si=20d2c691d9ae4d4f"
+  },
+  {
+    "id": 3,
+    "title": "Marry On a Cross",
+    "artist": "Ghost",
+    "url": "https://open.spotify.com/track/7wdwIaXUuzlu1grzWMFRJm?si=8fef8a3942604243"
+  },
+  {
+    "id": 4,
+    "title": "Golden Hour",
+    "artist": "JVKE",
+    "url": "https://open.spotify.com/track/5odlY52u43F5BjByhxg7wg?si=273342ba10864caa"
+  }
+]
