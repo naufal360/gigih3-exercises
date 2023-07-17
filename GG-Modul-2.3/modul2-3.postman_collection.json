@@ -1,0 +1,249 @@
+{
+	"info": {
+		"_postman_id": "7a6cee8b-0200-4c7b-8fa7-f4f97030b720",
+		"name": "modul2-3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19210761"
+	},
+	"item": [
+		{
+			"name": "AddSong",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"I Ain't Worried\",\r\n    \"artist\": \"OneRepublic\",\r\n    \"url\": \"https://open.spotify.com/track/4h9wh7iOZ0GGn8QVp4RAOB?si=d9574c27782d42ac\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/songs",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"songs"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "AddSongSuccess",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"I Ain't Worried\",\r\n    \"artist\": \"OneRepublic\",\r\n    \"url\": \"https://open.spotify.com/track/4h9wh7iOZ0GGn8QVp4RAOB?si=d9574c27782d42ac\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/songs",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"songs"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "162"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a2-k/I4wd5dsQlYB9g/JVtjPbcvSEk\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Jul 2023 02:09:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 5,\n        \"title\": \"I Ain't Worried\",\n        \"artist\": \"OneRepublic\",\n        \"playcount\": 0,\n        \"url\": \"https://open.spotify.com/track/4h9wh7iOZ0GGn8QVp4RAOB?si=d9574c27782d42ac\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "PlayASong",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/songs/:search",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"songs",
+						":search"
+					],
+					"variable": [
+						{
+							"key": "search",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "PlayASong3Times",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/songs/one",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"songs",
+								"one"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "162"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a2-8sRj0dcXZ/l3xx2/AHXT5PSLGzI\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Jul 2023 02:09:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 5,\n        \"title\": \"I Ain't Worried\",\n        \"artist\": \"OneRepublic\",\n        \"playcount\": 3,\n        \"url\": \"https://open.spotify.com/track/4h9wh7iOZ0GGn8QVp4RAOB?si=d9574c27782d42ac\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "GetListSongs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/songs",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"songs"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetListSongsSuccess",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/songs",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"songs"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "773"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"305-MBOrWQz4rx2ZTPL+lWN9r+AbHgw\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Jul 2023 02:09:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": 3,\n            \"title\": \"Marry On a Cross\",\n            \"artist\": \"Ghost\",\n            \"playcount\": 10,\n            \"url\": \"https://open.spotify.com/track/7wdwIaXUuzlu1grzWMFRJm?si=8fef8a3942604243\"\n        },\n        {\n            \"id\": 2,\n            \"title\": \"Leave Before You Love Me\",\n            \"artist\": \"Marshmello, Jonas Brother\",\n            \"playcount\": 3,\n            \"url\": \"https://open.spotify.com/track/4qu63nuBpdn0qHUHuObEj1?si=20d2c691d9ae4d4f\"\n        },\n        {\n            \"id\": 5,\n            \"title\": \"I Ain't Worried\",\n            \"artist\": \"OneRepublic\",\n            \"playcount\": 3,\n            \"url\": \"https://open.spotify.com/track/4h9wh7iOZ0GGn8QVp4RAOB?si=d9574c27782d42ac\"\n        },\n        {\n            \"id\": 1,\n            \"title\": \"Classic\",\n            \"artist\": \"MKTO\",\n            \"playcount\": 0,\n            \"url\": \"https://open.spotify.com/track/6FE2iI43OZnszFLuLtvvmg?si=535e2c7b0d2946bc\"\n        },\n        {\n            \"id\": 4,\n            \"title\": \"Golden Hour\",\n            \"artist\": \"JVKE\",\n            \"playcount\": 0,\n            \"url\": \"https://open.spotify.com/track/5odlY52u43F5BjByhxg7wg?si=273342ba10864caa\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
